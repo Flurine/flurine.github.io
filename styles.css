@@ -1,0 +1,77 @@
+body {
+    background-color: #474747;
+    color: #f0ead6;
+    font-family: Arial, sans-serif;
+}
+
+.header, .navbar, nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0ead6;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #FFF;
+}
+
+.app-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-field, .display-field {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.input-field label, .display-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field input[type="text"] {
+    width: 200px; 
+    padding: 5px;
+}
+
+#prediction-display {
+}
+
+
+.input-field button {
+    background-color: #f0ead6; /* Eggshell white */
+    color: #474747; /* Ash-black */
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.input-field button:hover {
+    background-color: #e0d6c3; /* Lighter shade for hover effect */
+}
+
+#message {
+    margin-top: 5px;
+    font-size: 0.9em;
+}

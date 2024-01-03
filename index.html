@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Flurine</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="navbar">
+            <img src="Flurine.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#app" class="active">App</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- About Section -->
+    <div id="about" class="content-section">
+        <p>This project is a bioinformatics tool designed to analyze and predict molecular properties based on SMILES
+            (Simplified Molecular Input Line Entry System) notation. It allows researchers and scientists to input a
+            SMILES string and receive predicted molecular characteristics, aiding in the analysis and understanding of
+            various compounds.</p>
+    </div>
+
+    <!-- App Section -->
+    <div id="app" class="content-section" style="display:none;">
+        <div class="input-field">
+            <label for="smiles">Enter SMILES:</label>
+            <input type="text" id="smiles">
+            <button type="button" id="submit-button">Submit</button>
+            <div id="message"></div>
+        </div>
+        <div class="display-field">
+            <label>Predicted Emission Maximum in nm:</label>
+            <span id="prediction-display"></span>
+        </div>
+    </div>
+
 
 </body>
+<script src="script.js"></script>
+
 </html>
